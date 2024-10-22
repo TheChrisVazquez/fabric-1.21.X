@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Esto es el primer mod de fabric",
+	"authors": [
+		"TheChrisVazquez"
+	],
+	"contact": {
+		"homepage": "https://thechrisvazquez.site/",
+		"sources": "https://github.com/thechrisvazquez"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.thechrisvazquez.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.thechrisvazquez.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.thechrisvazquez.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
