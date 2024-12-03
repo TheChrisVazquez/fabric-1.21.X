@@ -30,7 +30,7 @@ public class ClockItem extends Item {
             if (user instanceof ServerPlayerEntity serverPlayer) {
                 BlockPos spawnpos = serverPlayer.getSpawnPointPosition();
                 user.teleport(spawnpos.getX(), spawnpos.getY(), spawnpos.getZ(), true);
-                Text fancyMessage = Text.literal("¡Has usado el teleport! ").formatted(Formatting.BOLD, Formatting.RED);
+                Text fancyMessage = Text.literal("¡Has usado el teleport! ").formatted(Formatting.BOLD, Formatting.LIGHT_PURPLE);
                 user.sendMessage(fancyMessage, false);
             }
             world.playSound(null, user.getBlockPos(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.HOSTILE);
